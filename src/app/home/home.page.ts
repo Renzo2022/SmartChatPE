@@ -37,6 +37,29 @@ export class HomePage {
 
     //Emular que el bot esta cargando la respuesta
     this.loading = true;
+
+    setTimeout(() => {  
+      this.loading = false;
+      this.typeText('estoy bien  y tu?')
+    }, 2000);
+
+  }
+
+  //Funcion que da el efecto que el bot esta escribiendo
+  typeText(text: string){
+
+    let textIndex = 0;
+    let messagesLastIndex = this.messages.length -1;
+
+    let interval = setInterval(() => {
+
+      if(textIndex < text.length){
+        this.messages [messagesLastIndex].content += text.charAt(textIndex);
+        textIndex++;
+      }else{
+        clearInterval(interval);
+      }
+    }, 15)
   }
 
 }
