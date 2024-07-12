@@ -17,11 +17,26 @@ export class HomePage {
   form = new FormGroup ({
     promt: new FormControl('')
   })
+  //bot cargando respuesta
+  loading: boolean = false;
 
   constructor() {}
 
   submit(){
-    console.log(this.form.value)
+    console.log(this.form.value);
+
+    let promt = this.form.value.promt as string;
+
+    //===Mensaje del usuario===
+    let userMsg: Message = { sender: 'me', content: promt } 
+    this.messages.push(userMsg);
+
+    //===Mensaje del bot===
+    let botMsg: Message = { sender: 'bot', content: ''} 
+    this.messages.push(botMsg);
+
+    //Emular que el bot esta cargando la respuesta
+    this.loading = true;
   }
 
 }
