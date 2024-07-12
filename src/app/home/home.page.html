@@ -9,6 +9,9 @@
 <ion-content [fullscreen]="true">
 
     <ion-item *ngFor="let m of messages">
+      <ion-badge [color]="m.sender == 'me' ? 'success' : 'tertiary'" mode= "ios">
+        <ion-icon [src]="m.sender == 'me' ? 'assets/user.svg' : 'assets/bot.svg'"></ion-icon>
+      </ion-badge>
       <ion-label>{{m.content}}</ion-label>
     </ion-item>
 
