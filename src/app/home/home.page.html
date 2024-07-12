@@ -8,9 +8,9 @@
 
 <ion-content [fullscreen]="true">
 
-    <ion-item *ngFor="let m of messages">
-      <ion-badge [color]="m.sender == 'me' ? 'success' : 'tertiary'" mode= "ios">
-        <ion-icon [src]="m.sender == 'me' ? 'assets/user.svg' : 'assets/bot.svg'"></ion-icon>
+    <ion-item lines="none" [ngClass]="{'bot': m.sender !== 'me'}" class="chat-item" *ngFor="let m of messages">
+      <ion-badge slot="start" [color]="m.sender == 'me' ? 'success' : 'tertiary'" mode= "ios">
+        <ion-icon class="chat-icon" [src]="m.sender == 'me' ? 'assets/user.svg' : 'assets/bot.svg'"></ion-icon>
       </ion-badge>
       <ion-label>{{m.content}}</ion-label>
     </ion-item>
