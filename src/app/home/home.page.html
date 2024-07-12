@@ -8,6 +8,10 @@
 
 <ion-content [fullscreen]="true">
 
+    <ion-item *ngFor="let m of messages">
+      <ion-label>{{m.content}}</ion-label>
+    </ion-item>
+
 </ion-content>
 
 <ion-footer class="ion-padding">
