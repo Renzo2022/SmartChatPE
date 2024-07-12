@@ -35,12 +35,18 @@ export class HomePage {
     let botMsg: Message = { sender: 'bot', content: ''} 
     this.messages.push(botMsg);
 
+    //Bloquear TextArea cuando esta respondiendo la solicitud
+    this.form.reset();
+    this.form.disable();
+
     //Emular que el bot esta cargando la respuesta
     this.loading = true;
 
     setTimeout(() => {  
       this.loading = false;
       this.typeText('estoy bien  y tu?')
+
+      this.form.enable();
     }, 2000);
 
   }
