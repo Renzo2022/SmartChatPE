@@ -14,4 +14,8 @@ export class HomePage {
 
   constructor() {}
 
+  submit(){
+    console.log(this.form.value)
+  }
+
 }
