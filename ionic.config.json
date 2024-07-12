@@ -1,0 +1,7 @@
+{
+  "name": "SmartChatPE",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
