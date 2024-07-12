@@ -8,15 +8,16 @@
 
 <ion-content [fullscreen]="true">
 
-    <ion-item lines="none" [ngClass]="{'bot': m.sender !== 'me'}" class="chat-item" *ngFor="let m of messages; index as i">
-      <ion-badge slot="start" [color]="m.sender == 'me' ? 'success' : 'tertiary'" mode= "ios">
-        <ion-icon class="chat-icon" [src]="m.sender == 'me' ? 'assets/user.svg' : 'assets/bot.svg'"></ion-icon>
-      </ion-badge>
-      <ion-label>
-        {{m.content}}
-      <ion-spinner *ngIf="loading && (i+ == messages.lenght)" color="tertiary" name="dots"></ion-spinner>
-      </ion-label>
-    </ion-item>
+  <ion-item lines="none" [ngClass]="{'bot': m.sender !== 'me'}" class="chat-item"
+    *ngFor="let m of messages; index as i">
+    <ion-badge slot="start" [color]="m.sender == 'me' ? 'success' : 'tertiary'" mode="ios">
+      <ion-icon class="chat-icon" [src]="m.sender == 'me' ? 'assets/user.svg' : 'assets/bot.svg'"></ion-icon>
+    </ion-badge>
+    <ion-label>
+      {{m.content}}
+      <ion-spinner *ngIf="loading && (i+1 == messages.length)" color="tertiary" name="dots"></ion-spinner>
+    </ion-label>
+  </ion-item>
 
 </ion-content>
 
@@ -26,7 +27,7 @@
 
     <ion-item class="text-box-item">
       <ion-textarea formControlName="promt" auto-grow="true" placeholder="Escribe algo..."></ion-textarea>
-      
+
       <ion-buttons slot="end">
         <ion-button>
           <ion-icon name="send"></ion-icon>

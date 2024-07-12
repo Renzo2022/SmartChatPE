@@ -1,0 +1,41 @@
+[33mcommit e8703057119c5c45b63130f52e4847675c73725e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Renzo2022 <renzofideldiazsotelo@gmail.com>
+Date:   Fri Jul 12 06:31:03 2024 -0500
+
+    Agregar Loading cuando el bot cargue nuesta respuesta
+
+[33mcommit f0389f607f8373bc6ea03f61f63471322d88f6a5[m
+Author: Renzo2022 <renzofideldiazsotelo@gmail.com>
+Date:   Fri Jul 12 06:21:08 2024 -0500
+
+    Agregando memsaje de usuario y bot
+
+[33mcommit 770a4385ef401785dd876fd5cb37d2b4bd202161[m
+Author: Renzo2022 <renzofideldiazsotelo@gmail.com>
+Date:   Fri Jul 12 06:02:02 2024 -0500
+
+    Agregando iconos para usuario y bot
+
+[33mcommit 3110f8da6a4ba052e52922074497aff57b995357[m
+Author: Renzo2022 <renzofideldiazsotelo@gmail.com>
+Date:   Thu Jul 11 21:10:12 2024 -0500
+
+    Agregando el chat
+
+[33mcommit b3aa4a761886bd7a7801a3f764e3828c6a3b3077[m
+Author: Renzo2022 <renzofideldiazsotelo@gmail.com>
+Date:   Thu Jul 11 20:36:09 2024 -0500
+
+    Agregando funcionalidad para que el text-area capte el texto dentro de él
+
+[33mcommit 2d8cec39faa8ad2bcee9cf50f9324eaa5848f8d2[m
+Author: Renzo2022 <renzofideldiazsotelo@gmail.com>
+Date:   Thu Jul 11 19:40:42 2024 -0500
+
+    Agregando boton send para enviar
+
+[33mcommit 5fd284784dd4db7a8b450cb044aaaa650c3aaace[m
+Author: Renzo2022 <renzofideldiazsotelo@gmail.com>
+Date:   Thu Jul 11 19:19:40 2024 -0500
+
+    Initial commit
